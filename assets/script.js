@@ -8,8 +8,8 @@ let botonLimpiar = document.getElementById('limpiar');
 function generarContrasena(){
     let numeroDigitado = parseInt(cantidad.value);
 
-    if (numeroDigitado < 8 || numeroDigitado > 12) {
-        alert('Ingresar una cantidad de caracteres en el rango de [8-12]');
+    if (numeroDigitado < 4 || numeroDigitado > 12) {
+        alert('Ingresar una cantidad de caracteres en el rango de [4-12]');
         return; //Salir de la función antes de tiempo
     }
 
