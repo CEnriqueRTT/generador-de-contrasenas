@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="./assets/img/icon.png">
+        <title>Generador de contraseñas®</title>
+        <!-- Referencia al archivo CSS -->
+        <link rel="stylesheet" href="./assets/style.css" type="text/css">
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+    </head>
+    <body>
+        <main class="container">
+            <div class="container_contenido">
+                <div class="container_informacion">
+                    <div class="container_texto">
+                        <h1>Generador<span class="container_texto-azul">de Contraseñas</span></h1>
+                        <div class="container_campo"> 
+                            <label class="texto_parrafo">Cantidad:
+                                <input class="container_input" type="number" id="cantidad">
+                            </label>
+                            <button class="boton" id="generar" onclick="generarContrasena()"><i class="fa-solid fa-key"></i> Generar</button>
+                        </div> 
+                        <div class="container_campo">
+                            <input class="container_contrasena" type="text" id="contrasena" placeholder="contraseña generada" readonly/>
+                        </div>
+                        <div class="mensaje" id="mensaje"></div>
+                        <button class="boton" id="limpiar" onclick="limpiarCampos()"><i class="fa-solid fa-broom"></i> Limpiar</button>
+                    </div> 
+                </div>
+            </div>
+        </main>
+        <!-- Referencia al archivo JS -->
+        <script src="./assets/script.js"></script> 
+        <!-- Font Awesome JS -->
+        <script src="https://use.fontawesome.com/releases/v6.1.1/js/all.js"></script>  
+    </body>
+</html>
